@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="question-container" class="hide">
+        <div class="questions">
+          <script>
+            const questions = [
+              {
+                question:"which of these is the framework of javascript?",
+                answers: [
+                  { text: "python", correct: false },
+                  { text: "django", correct: false },
+                  { text: "react", correct: true },
+                  { text: "eclips", correc: false },
+                ],
+              },
+              {
+                question: "who is the prime minister of india",
+                answers: [
+                  { text: "Narendra modi", correct: true },
+                  { text: "rahul gandhi", correct: false },
+                  { text: "priyanka ", correct: false },
+                  { text: "yogi maharaj", correc: false },
+                ],
+              },
+              {
+                question: "what is 4*3",
+                answers: [
+                  { text: "5", correct: false },
+                  { text: "12", correct: true },
+                  { text: "8 ", correct: false },
+                  { text: "6", correc: false },
+                ],
+              },
+            ];
+          </script>
+        </div>
+        <div id="answer-button" class="btn-grid">
+          <button class="btn"></button>
+          <button class="btn"></button>
+          <button class="btn"></button>
+          <button class="btn"></button>
+        </div>
+      </div>
+      <div class="control">
+        <button id="start-btn" class="start-btn btn">Start</button>
+        <button id="next-btn" class="next-btn btn hide">Next</button>
+      </div>
+    </div>
+
+    <div class="score">
+      <span id="right-answers"></span>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
